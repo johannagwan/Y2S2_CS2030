@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0057)https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" hc="a0" hcx="0"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<title>CodeCrunch</title>
+<!-- START NUS Includes-->
+<script type="text/javascript" src="./Lab 3 question_files/nussearch.js.download"></script>
+<link rel="stylesheet" type="text/css" href="./Lab 3 question_files/nusbase.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./Lab 3 question_files/nusmenu.css" media="screen, print, projection, handheld">
+<link rel="stylesheet" type="text/css" href="./Lab 3 question_files/nusscreen.css" media="screen, projection, print">
+<link href="https://codecrunch.comp.nus.edu.sg/nus/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" href="https://codecrunch.comp.nus.edu.sg/nus/blank.png">
+<!-- END NUS Includes -->
+<script type="text/javascript" src="./Lab 3 question_files/ajax.js.download"></script>
+<script type="text/javascript" src="./Lab 3 question_files/jquery-1.8.3.min.js.download"></script>
+<script type="text/javascript" src="./Lab 3 question_files/jquery.tablesorter.min.js.download"></script>
+<script type="text/javascript" src="./Lab 3 question_files/jquery.tablesorter.pager.js.download"></script>
+<!--<script type="text/javascript" src="/js/folding.js"></script>-->
+<script type="text/javascript" src="./Lab 3 question_files/jquery.watermark.min.js.download"></script>
+<script type="text/javascript">
+            function enterPressButton(field, button) {
+                $(field).keypress(function(e){if(e.which==13)$(button).trigger("click");});
+            }
+</script>
+<link rel="stylesheet" href="./Lab 3 question_files/style.css" type="text/css">
+<link rel="stylesheet" href="./Lab 3 question_files/jquery.tablesorter.css" type="text/css">
+<script type="text/javascript" src="./Lab 3 question_files/jquery-1.3.2.min.js.download"></script>
+<!--<script type="text/javascript" src="js/folding.js"></script>-->
+<script type="text/javascript" src="./Lab 3 question_files/jquery.rating.js.download"></script>
+<script type="text/javascript" src="./Lab 3 question_files/behaviour.js.download"></script>
+<script type="text/javascript" src="./Lab 3 question_files/textarea_maxlen.js.download"></script>
+<script type="text/javascript" src="./Lab 3 question_files/jquery.timer.js.download"></script>
+
+<script type="text/javascript" src="./Lab 3 question_files/plupload.full.min.js.download"></script>
+
+<link rel="stylesheet" href="./Lab 3 question_files/jquery.rating.css" type="text/css">
+<link rel="stylesheet" href="./Lab 3 question_files/style.css" type="text/css">
+<link rel="stylesheet" href="./Lab 3 question_files/tagcloud.css" type="text/css">
+<link rel="stylesheet" href="./Lab 3 question_files/jquery-ui-1.7.2.custom.css" type="text/css">
+
+<link rel="stylesheet" href="./Lab 3 question_files/jquery.ui.plupload.css" type="text/css">
+
+<style id="hc_style" type="text/css">html[hc="a0"] {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_off"); } html[hcx="0"] img[src*="jpg"], html[hcx="0"] img[src*="jpeg"], html[hcx="0"] svg image, html[hcx="0"] img.rg_i, html[hcx="0"] embed, html[hcx="0"] object, html[hcx="0"] video {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_off"); }  html[hc="a1"] {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_highcontrast"); } html[hcx="1"] img[src*="jpg"], html[hcx="1"] img[src*="jpeg"], html[hcx="1"] img.rg_i, html[hcx="1"] svg image, html[hcx="1"] embed, html[hcx="1"] object, html[hcx="1"] video {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_highcontrast_back"); }  html[hc="a2"] {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_grayscale"); } html[hcx="2"] img[src*="jpg"], html[hcx="2"] img[src*="jpeg"], html[hcx="2"] img.rg_i, html[hcx="2"] svg image, html[hcx="2"] embed, html[hcx="2"] object, html[hcx="2"] video {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_grayscale_back"); }  html[hc="a3"] {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_invert"); } html[hcx="3"] img[src*="jpg"], html[hcx="3"] img[src*="jpeg"], html[hcx="3"] img.rg_i, html[hcx="3"] svg image, html[hcx="3"] embed, html[hcx="3"] object, html[hcx="3"] video {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_invert_back"); }  html[hc="a4"] {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_invert_grayscale"); } html[hcx="4"] img[src*="jpg"], html[hcx="4"] img[src*="jpeg"], html[hcx="4"] img.rg_i, html[hcx="4"] svg image, html[hcx="4"] embed, html[hcx="4"] object, html[hcx="4"] video {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_invert_back"); }  html[hc="a5"] {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_yellow_on_black"); } html[hcx="5"] img[src*="jpg"], html[hcx="5"] img[src*="jpeg"], html[hcx="5"] img.rg_i, html[hcx="5"] svg image, html[hcx="5"] embed, html[hcx="5"] object, html[hcx="5"] video {   -webkit-filter: url("https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#hc_extension_yellow_on_black_back"); }</style></head>
+
+<body>
+<!-- START NUS-Header -->
+
+<!-- NUS Header -->
+<div id="nusheader" class="nusbody">
+<div class="nuslogodiv">
+<a href="http://www.nus.edu.sg/">
+<img class="nuslogo" src="./Lab 3 question_files/soclogo.png" alt="">
+</a>
+</div>
+<div id="nuspointermenu">
+<ul>
+<li><a href="http://exchange.nus.edu.sg/"><span style="text-transform:none">NUS WebMail</span></a></li>
+<li><a href="https://ivle.nus.edu.sg/lms/default.aspx">ivle</a></li>
+<li><a href="http://www.lib.nus.edu.sg/">library</a></li>
+<li><a href="http://www.nus.edu.sg/campusmap/">maps</a></li>
+<!--<li><a href="https://aces01.nus.edu.sg/CoE/jsp/coeMain.jsp">calendar</a></li>-->
+<!--<li><a href="/sitemap">sitemap</a></li>-->
+<!--<li><a href="#">a-z index</a></li>-->
+<!--<li><a href="/contact">contact</a></li>-->
+<li><a href="https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362#" id="rightcorner">&nbsp;</a></li>
+</ul>
+<br style="clear: left">
+</div>
+<div id="searchform">
+<script src="./Lab 3 question_files/nussearch.js.download" type="text/javascript"></script>
+<form id="frmSearch" onsubmit="evalSearch();return false" action="https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4362"><div>
+<a href="http://www.nus.edu.sg/search/" style="text-decoration:none; font-size:11px; font-weight:bold; color:#666666">Search </a>
+<input id="txtKeyword" type="text" value="search for..." onfocus="value=&#39;&#39;" class="equal" size="18">
+in
+<select id="SearchMenu" name="SearchMenu">
+<option selected="selected" value="0">NUS Websites</option>
+<option value="1">Internet</option>
+<option value="2">Staff Directory</option>
+<option value="3">Advanced Search</option>
+</select>
+<input class="equal" id="Go" src="./Lab 3 question_files/go.png" type="image">
+</div></form>
+</div>
+</div>
+
+<!-- NUS Local-Navigation --><!--
+<div id="nusmenu" class="nusbody"><div id="nusmenu_l"><div id="nusmenu_r">
+<ul>
+  <li><a href="http://www.comp.nus.edu.sg/index.html">Home</a></li>
+  <li><a href="http://www.comp.nus.edu.sg/about.html">About Us</a></li>
+  <li><a class="drop" href="javascript:;">Departments</a>
+    <ul>
+      <li><a href="http://www.comp.nus.edu.sg/cs" >Computer Science</a></li>
+      <li><a href="http://www.comp.nus.edu.sg/is/" >Information Systems</a></li>
+    </ul>
+  </li>
+  <li><a href="http://www.comp.nus.edu.sg/undergraduates" >Undergraduate</a></li>
+  <li><a href="http://www.comp.nus.edu.sg/graduates" >Graduate</a></li>
+  <li><a href="http://www.comp.nus.edu.sg/research" >Research</a></li>
+  <li><a href="http://www.comp.nus.edu.sg/entrepreneurship" >Entrepreneurship</a></li>
+  <li><a href="http://www.stmi.nus.edu.sg" >Executive Education</a></li>
+  <li><a href="http://www.comp.nus.edu.sg/external_relations" >External Relations</a></li>
+</ul>
+</div></div></div>
+-->
+
+<!-- NUS Inner-Title -->
+<div id="nustitle" class="nusbody"><div id="nustitle_l"><div id="nustitle_r">
+              <h1 id="site-name">
+                <a href="https://codecrunch.comp.nus.edu.sg/" title="Home" rel="home">CodeCrunch</a>
+              </h1>
+</div></div></div>
+
+<!-- END NUS-Header -->
+
+<div id="banner">
+        <div id="topmenu">
+        <div id="login">
+                Logged in as: <strong>e0323120</strong>
+                </div>
+                <div style="display: block;"><ul>
+                                        <li><a href="https://codecrunch.comp.nus.edu.sg/index.php">Home</a></li>
+                                                    <li><a href="https://codecrunch.comp.nus.edu.sg/user_course_viewall.php">My Courses</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/tutorial_browser.php">Browse Tutorials</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_browser.php">Browse Tasks</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/task_criteria.php">Search</a></li>
+                                                                <li><a href="https://codecrunch.comp.nus.edu.sg/user_viewsubmissions.php">My Submissions</a></li>
+                                                <li><a href="https://codecrunch.comp.nus.edu.sg/logout_process.php">Logout</a></li>
+                            </ul></div>
+        </div>
+</div>
+<div id="container">
+<div id="outer">
+<div id="inner">
+	<div id="content_full">                         
+		<div class="content-header"><h3>CS2030 Text Formatters (Question)</h3></div>
+		<div class="spacer"></div>
+		<table width="100%" cellpadding="0" cellspacing="0" border="0">
+			<tbody><tr><td valign="top" style="width: 30%;">
+				<div class="meta_header">Tags &amp; Categories</div>
+				<div id="classifyList"><span class="value">Tags:
+</span>
+<span class="value">Categories:
+</span></div>
+			</td>
+			<td valign="top" style="width: 40%;">
+				<div class="meta_header">Related Tutorials</div>
+				<div id="tutorialList"></div>
+			</td>
+			<td valign="top" style="width: 30%;">
+			</td>
+			</tr>
+		</tbody></table>
+		<div class="content-header">
+			<h3>Task Content
+							</h3>
+		</div>                          
+		<div class="panel"><div class="task-content">
+		<h3>Text Formatters</h3>
+<p><strong>Topic Coverage</strong></p>
+<ul>
+<li>Uses of Interfaces</li>
+<li>Comparable Interface</li>
+<li>PriorityQueue and Natural Ordering</li>
+</ul>
+<h3>Problem Description</h3>
+<p>Interfaces are a powerful tool that can be used to increase the maintainability of your codebase. In this lab, we will explore some different uses of interfaces and work with a commonly used interface, Comparable.</p>
+<p>You are implementing a text editor. This text editor takes input and formats it according to the rules of a specified text formatter.</p>
+<p>A number of different formats are specified below. Given an input string "I love CS2030", each formatter will output the following:</p>
+<ul>
+<li>Snake Case: "i_love_cs2030"</li>
+<li>Kebab Case: "i-love-cs2030"</li>
+<li>Pascal Case: "ILoveCs2030"</li>
+<li>Mixed Format: "i_love_cs2030", and this is derived from the following rules:<ol>
+<li>Take the first character of the input string, denoted by c. Find r = c % 3, where c is interpreted as the ASCII value of the character.</li>
+<li>If r = 0, create a formatter s using the Snake Case format.</li>
+<li>If r = 1, create a formatter s using the Kebab Case format. (The above string would do this)</li>
+<li>If r = 2, create a formatter s using the Pascal Case format.</li>
+<li>Additionally, create a Snake Case formatter, t, for the string "I Love CS2030".</li>
+<li>If s &gt; t, use the output of s. Otherwise, use the output of t.</li>
+</ol></li>
+</ul>
+<h3>Task</h3>
+<p>Write a program that reads some input strings, where each line is a string to format.</p>
+<p>The program will output all the formatted strings in the order defined in each level.</p>
+<p>The following assumptions can be made about the input:</p>
+<ul>
+<li>They will only contain alphanumeric characters and spaces.</li>
+<li>They will not start or end with a space.</li>
+<li>There will not be 2 spaces in a row.</li>
+</ul>
+<h3>Design Considerations</h3>
+<p>There are a few requirements that your solution must fulfil:</p>
+<ul>
+<li>The output strings should not be sorted. Any sorting should be done on the TextFormatters.</li>
+<li>The method signatures specified in Level 1 should not be changed.</li>
+<li>You are not allowed to use the <tt>instanceof</tt> keyword.</li>
+</ul>
+<p>This task is divided into four levels.</p>
+<table border="1" cellpadding="10">
+<tbody>
+<tr>
+<td>
+<h4>Level 1</h4>
+<p><big><strong>Create the Text Editor and the Snake Case Formatter.</strong></big></p>
+<p>Create the interface TextFormatter with the following code:</p>
+<p>&nbsp;</p>
+<pre>interface TextFormatter {
+  // Create a clone of the TextFormatter with another String
+  public TextFormatter clone(String s);
+
+  // Return a formatted string
+  public String format();
+}
+</pre>
+<p>&nbsp;</p>
+<p>Create a formatter that implements TextFormatter, such that calling <tt>format()</tt> returns a string formatted using Snake Case. The constructor of the formatter should take in the string to format. You may find it useful to use a <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/StringBuilder.html">StringBuilder</a> to construct the formatted strings.</p>
+<p>Create a class, TextEditor, that has the following constructor:</p>
+<strong>
+<p><tt>public TextEditor(List&lt;TextFormatter&gt; formatter)</tt><br> i.e. the TextEditor is created with a list of provided TextFormatters.</p>
+<p>It should also have the methods <tt>addString(String s)</tt>, that adds a string into the Text Editor,<br> and a method <tt>printAll()</tt> to print all formatted strings.</p>
+</strong>
+<p>Write a program that reads in the input strings, passes them in order to TextEditor, and then calls <tt>printAll()</tt> at the end.</p>
+<p>The following is a sample run of the program.   User input is <span style="text-decoration: underline;">underlined</span>.</p>
+<table style="width: 300px;" border="1">
+<tbody>
+<tr>
+<td>
+<pre>$ java Main
+<span style="text-decoration: underline;">I Love CS2030</span>
+i_love_cs2030
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<pre>$ java Main
+<span style="text-decoration: underline;">oneword
+two words
+Capitalized Text
+same same
+But Different
+correcT BaTTery stApl3 H0rSe</span>
+oneword
+two_words
+capitalized_text
+same_same
+but_different
+correct_battery_stapl3_h0rse
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Click <a href="https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4363" target="_blank">here</a> to submit to CodeCrunch.</p>
+<p>Check the format correctness of the output by typing the following Unix command</p>
+<pre>$ java Main &lt; test.in | diff - test1.out</pre>
+<p>Make a copy of your Java programs to the level directory by typing the Unix commands</p>
+<pre>$ jar cvf texteditor1.jar *.java<br>$ mkdir texteditor1<br>$ cp *.java texteditor1<br>$ cp texteditor1.jar texteditor1</pre>
+<p>Verify your jar archive using</p>
+<pre>$ jar tf ~/texteditor1/texteditor1.jar</pre>
+Note that all Java files should NOT be archived in another directory. You may ignore the <tt>META-INF</tt> directory.</td>
+</tr>
+<tr>
+<td>
+<h4>Level 2</h4>
+<p><big><strong>Implement the Kebab Case Formatter and the Pascal Case Formatter</strong></big></p>
+<p>Create the two formatters according to the rules defined above. Pass all three formatters to the TextEditor in the order <tt>[Snake Case, Kebab Case, Pascal Case]</tt>, such that when calling `printAll()`, each string is formatted using the 3 TextFormatters in order, and each string is printed in the order that it was inserted.</p>
+<p>The following is a sample run of the program.   User input is <span style="text-decoration: underline;">underlined</span>.</p>
+<table style="width: 300px;" border="1">
+<tbody>
+<tr>
+<td>
+<pre>$ java Main
+<span style="text-decoration: underline;">I Love CS2030</span>
+i_love_cs2030
+i-love-cs2030
+ILoveCs2030
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<pre>$ java Main
+<span style="text-decoration: underline;">oneword
+two words
+Capitalized Text
+same same
+But Different
+correcT BaTTery stApl3 H0rSe</span>
+oneword
+oneword
+Oneword
+two_words
+two-words
+TwoWords
+capitalized_text
+capitalized-text
+CapitalizedText
+same_same
+same-same
+SameSame
+but_different
+but-different
+ButDifferent
+correct_battery_stapl3_h0rse
+correct-battery-stapl3-h0rse
+CorrectBatteryStapl3H0rse
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Click <a href="https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4364" target="_blank">here</a> to submit to CodeCrunch.</p>
+<p>Check the format correctness of the output by typing the following Unix command</p>
+<pre>$ java Main &lt; test.in | diff - test2.out</pre>
+<p>Make a copy of your Java programs to the level directory by typing the Unix commands</p>
+<pre>$ jar cvf texteditor2.jar *.java<br>$ mkdir texteditor2<br>$ cp *.java texteditor2<br>$ cp texteditor2.jar texteditor2</pre>
+<p>Verify your jar archive using</p>
+<pre>$ jar tf ~/texteditor2/texteditor2.jar</pre>
+Note that all Java files should NOT be archived in another directory. You may ignore the <tt>META-INF</tt> directory.</td>
+</tr>
+<tr>
+<td>
+<h4>Level 3</h4>
+<p><big><strong>Sorting Formatters</strong></big></p>
+<p>In Java, a <a href="https://docs.oracle.com/javase/9/docs/api/java/util/PriorityQueue.html">PriorityQueue</a> can be used to easily sort objects according to some rules of sorting.</p>
+<p>In a PriorityQueue, objects are sorted according to their "natural ordering", i.e. the order that objects would be in if no comparison condition, or <a href="https://docs.oracle.com/javase/9/docs/api/java/util/Comparator.html">Comparator</a>, is provided.</p>
+<p>We can do this by having the formatters implement the <a href="https://docs.oracle.com/javase/9/docs/api/java/lang/Comparable.html">Comparable</a> interface, specifically <tt>Comparable&lt;TextFormatter&gt;</tt>. The <tt>compareTo(T o)</tt> method compares the current object to another object. It returns a negative number if it comes before the other object, a positive number if it comes after the other object, and 0 if they are considered of the same ordering. The type <tt>T</tt> in the argument is a "generic type". In this case, since we are implementing <tt>Comparable&lt;TextFormatter&gt;</tt>, <tt>T</tt> should be <tt>TextFormatter</tt>. You will learn/have learnt more about it in the lectures.</p>
+<p>In your TextEditor, use a <tt>PriorityQueue&lt;TextFormatter&gt;</tt> to store the various TextFormatters. The comparison condition between TextFormatters should be as follows:</p>
+<ol>
+<li>Generate the output of the text formatter.</li>
+<li>Take the ASCII value of each character in the output and sum them up.</li>
+<li>The formatter with a lower sum should come before the formatter with a higher sum.</li>
+</ol>
+<p><tt>printAll()</tt> should print all formatted strings according to the ordering defined above.</p>
+<p>(Note that we could also use a Comparator to sort output strings, but let's ignore that for the sake of learning.)</p>
+<p>The following is a sample run of the program.   User input is <span style="text-decoration: underline;">underlined</span>.</p>
+<table style="width: 300px;" border="1">
+<tbody>
+<tr>
+<td>
+<pre>$ java Main
+<span style="text-decoration: underline;">I Love CS2030</span>
+ILoveCs2030
+i-love-cs2030
+i_love_cs2030
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<pre>$ java Main
+<span style="text-decoration: underline;">oneword
+two words
+Capitalized Text
+same same
+But Different
+correcT BaTTery stApl3 H0rSe</span>
+Oneword
+oneword
+oneword
+SameSame
+TwoWords
+same-same
+same_same
+two-words
+two_words
+ButDifferent
+but-different
+but_different
+CapitalizedText
+capitalized-text
+capitalized_text
+CorrectBatteryStapl3H0rse
+correct-battery-stapl3-h0rse
+correct_battery_stapl3_h0rse
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Click <a href="https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4365" target="_blank">here</a> to submit to CodeCrunch.</p>
+<p>Check the format correctness of the output by typing the following Unix command</p>
+<pre>$ java Main &lt; test.in | diff - test3.out</pre>
+<p>Make a copy of your Java programs to the level directory by typing the Unix commands</p>
+<pre>$ jar cvf texteditor3.jar *.java<br>$ mkdir texteditor3<br>$ cp *.java texteditor3<br>$ cp texteditor3.jar texteditor3</pre>
+<p>Verify your jar archive using</p>
+<pre>$ jar tf ~/texteditor3/texteditor3.jar</pre>
+Note that all Java files should NOT be archived in another directory. You may ignore the <tt>META-INF</tt> directory.</td>
+</tr>
+<tr>
+<td>
+<h4>Level 4</h4>
+<p><big><strong>Implement the Mixed Formatter</strong></big></p>
+<p>Implement a Mixed formatter that formats strings according to the rules above. Add it to your TextEditor.</p>
+<p>Hint: You might need to implement a new interface that extends from others.</p>
+<p>The following is a sample run of the program.   User input is <span style="text-decoration: underline;">underlined</span>.</p>
+<table style="width: 300px;" border="1">
+<tbody>
+<tr>
+<td>
+<pre>$ java Main
+<span style="text-decoration: underline;">I Love CS2030</span>
+ILoveCs2030
+i-love-cs2030
+i_love_cs2030
+i_love_cs2030
+</pre>
+</td>
+</tr>
+<tr>
+<td>
+<pre>$ java Main
+<span style="text-decoration: underline;">oneword
+two words
+Capitalized Text
+same same
+But Different
+correcT BaTTery stApl3 H0rSe</span>
+Oneword
+oneword
+oneword
+SameSame
+TwoWords
+same-same
+same_same
+two-words
+two_words
+i_love_cs2030
+i_love_cs2030
+i_love_cs2030
+ButDifferent
+but-different
+but_different
+but_different
+CapitalizedText
+capitalized-text
+capitalized-text
+capitalized_text
+CorrectBatteryStapl3H0rse
+correct-battery-stapl3-h0rse
+correct_battery_stapl3_h0rse
+correct_battery_stapl3_h0rse
+</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Click <a href="https://codecrunch.comp.nus.edu.sg/task_view.php?tid=4366" target="_blank">here</a> to submit to CodeCrunch.</p>
+<p>Check the format correctness of the output by typing the following Unix command</p>
+<pre>$ java Main &lt; test.in | diff - test4.out</pre>
+<p>Make a copy of your Java programs to the level directory by typing the Unix commands</p>
+<pre>$ jar cvf texteditor4.jar *.java<br>$ mkdir texteditor4<br>$ cp *.java texteditor4<br>$ cp texteditor4.jar texteditor4</pre>
+<p>Verify your jar archive using</p>
+<pre>$ jar tf ~/texteditor4/texteditor4.jar</pre>
+Note that all Java files should NOT be archived in another directory. You may ignore the <tt>META-INF</tt> directory.</td>
+</tr>
+</tbody>
+</table>		</div></div>                          
+					<div class="content-header">
+					<h3>Submission (Course)</h3>
+			</div>
+			<div id="courseNotification"></div>
+			<div class="panel" id="course_submit">
+				<div><span class="label">Select course:</span> <select id="course_id">
+			<option value="146">CS2030 (2018/2019 Sem 2) - Programming Methodology II</option>				</select>
+				</div>
+				<span class="label" style="vertical-align:top">Your Files:</span>
+				<span class="value-long">
+					<div id="plupload_containerCourse" style="position: relative;">
+						<a id="course_submission" href="javascript:;" class="submitButton" style="position: relative; z-index: 1;">BROWSE</a>
+					<div id="html5_1d5efhppv55912ib1iln9m41gjn4_container" class="moxie-shim moxie-shim-html5" style="position: absolute; top: -7px; left: 0px; width: 103px; height: 27px; overflow: hidden; z-index: 0;"><input id="html5_1d5efhppv55912ib1iln9m41gjn4" type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" multiple="" accept=".java,.c,.cpp,.h,.py,.jar" tabindex="-1"></div></div>
+					<br>
+					<div id="filelistCourse"></div>
+					<script type="text/javascript">
+						var uploaderCourse;
+						$(document).ready(function() {
+							uploaderCourse = new plupload.Uploader({
+								runtimes: 'html5,flash,html4',
+								browse_button: 'course_submission',
+								container: 'plupload_containerCourse',
+								prevent_duplicates: true,
+								url: 'plupload/uploadFiles.php',
+
+								filters: {
+									max_file_size: '8388608', 
+									mime_types: [
+										{title : "Allowed files", extensions : "java,c,cpp,h,py,jar"}	
+									]
+								},
+
+								init: {
+									PostInit: function () {
+										document.getElementById('filelistCourse').innerHTML = '';
+									},
+
+									FilesAdded: function (up, files) {
+										plupload.each(files, function(file) {
+											document.getElementById('filelistCourse').innerHTML += 
+												'<li class="plupload_file ui-state-default plupload_delete" id="' + file.id + '" class="plupload_file_name">' +  
+													'<div class="plupload_file_status">' +
+														'<div class="plupload_file_action">' + 
+															'<div class="plupload_action_icon ui-icon ui-icon-circle-close" onclick="uploaderCourse.removeFile(uploaderCourse.getFile(\''+file.id+'\'));"> </div>' + 
+														'</div>' +
+														'<div class="plupload_file_name" title="' + file.name + '">' + 
+															'<span class="plupload_file_name_wrapper">' + file.name + '   (<i>' + plupload.formatSize(file.size) + '</i>) <b></b>' + '</span>' +
+														'</div>' +
+													'</div>' +
+												'</li>';
+										});
+										document.getElementById('filelistCourse').innerHTML = '<ul class="plupload_filelist_content" id="uploader_filelist_Course" unselectable="on">' + document.getElementById('filelistCourse').innerHTML + '</ul>';
+
+									},
+
+									FilesRemoved: function(up, files) {
+										plupload.each(files, function(file) {
+											$('#' + file.id).remove();
+										});
+									},
+
+									FileUploaded: function(up, file, info) {
+										$('#' + file.id).remove();
+									},
+
+									UploadProgress: function(up, file) {
+										$('#' + file.id + ' b')[0].innerHTML = '<span>' + file.percent + "%</span>";
+									},
+
+									UploadComplete: function(up, files) {
+										doCourseTaskGrade();
+									},
+
+									Error: function(up, err) {
+										alert("\nError #" + err.code + ": " + err.message);
+									}
+								}
+							});
+							uploaderCourse.init();
+						});
+					</script>
+					<p><a href="javascript:uploaderCourse.setOption(&#39;multipart_params&#39;, { &#39;sess_id&#39;: &#39;r80hl9mamamfpfo25ff3fpt13nqclu74&#39;,&#39;type&#39;: &#39;course_submission&#39;, &#39;tid&#39;: &#39;4362&#39;, &#39;username&#39;: &#39;e0323120&#39;, &#39;uid&#39;: &#39;18223&#39; }); javascript:uploaderCourse.start();" class="submitButton">SUBMIT</a>
+					(only .java, .c, .cpp, .h, and .py extensions allowed)</p>
+				</span>
+				<br>
+				<span class="label">&nbsp;</span>
+				<span class="value-long" style="font-size: 90%; color: #777;">To submit multiple files, click on the Browse button, then select one or more
+				files. The selected file(s) will be added to the upload queue. You can repeat this step to add more files. Check that you have all the files
+				needed for your submission. Then click on the Submit button to upload your submission.</span>
+			</div>
+										<input type="hidden" id="tid" name="tid" value="4362">
+		</div>
+		<!-- end content -->
+</div>
+<!-- end inner -->
+<div id="loading-mask">
+        <p id="loading_mask_loader" class="loader" style="display: none;"> <img alt="Loading..." src="./Lab 3 question_files/ajax-loader-tr.gif"> <br>
+                Please wait... </p>
+</div>
+<script type="text/javascript">
+$(".star").rating({
+        focus: function(value, link) {
+                var tip = $("#rating_text");
+                tip[0].data = tip[0].data || tip.html(); 
+                tip.html(link.title || "value: " + value);
+        },
+        blur: function(value, link) {
+                var tip = $("#rating_text");
+                $("#rating_text").html(tip[0].data || "");
+        },
+        callback: function(value, link) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_updaterating.php",
+                        data: ({tid:$("#tid").val(), rating:value}),
+                        success: function(html) {
+                                var msg = html.split(";");
+                                $("#rating_text").removeClass().addClass(msg[0]);
+                                $("#rating_text").html(msg[1]);
+                        }
+                });
+        }
+});
+
+function getComments() {
+        $.ajax({
+                type: "POST",
+                url: "task_getcomments.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#commentList").html(html);
+                }
+        });
+}
+
+function doTaskGrade(e, d) {
+        $.ajax({
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#practiceNotification").removeClass().addClass(msg[0]);
+                        $("#practiceNotification").html(msg[1]);
+                }
+        });
+
+}
+
+function doCourseTaskGrade(e, d) {
+        $.ajax({
+                type: "POST",
+                url: "doTaskGrade.php",
+                data: ({tid:$("#tid").val(), course_id:$("#course_id").val(), do_course:1}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#courseNotification").removeClass().addClass(msg[0]);
+                        $("#courseNotification").html(msg[1]);
+                }
+        });
+
+}
+
+function addComment() {
+        $.ajax({
+                type: "POST",
+                url: "task_addcomment.php",
+                data: ({tid:$("#tid").val(), comment:encodeURIComponent($("#comment").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function deleteComment(c) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletecomment.php",
+                data: ({comment_id:c}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#commentNotification").removeClass().addClass(msg[0]);
+                        $("#commentNotification").html(msg[1]);
+                        
+                        getComments();
+                }
+        });
+}
+
+function getClassify(){
+                $.ajax({
+                type: "GET",
+                url: "task_classify.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#classifyList").html(html);
+                }
+        });
+}
+
+function getTutorial(){
+        $.ajax({
+                type: "POST",
+                url: "task_gettutorials.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#tutorialList").html(html);
+                }
+        });
+}
+
+function getQueries() {
+        $.ajax({
+                type: "POST",
+                url: "task_getqueries.php",
+                data: ({tid:$("#tid").val()}),
+                success: function(html) {
+                        $("#queryList").html(html);
+                }
+        });
+}
+
+function addQuery() {
+        $.ajax({
+                type: "POST",
+                url: "task_addquery.php",
+                data: ({tid:$("#tid").val(), contest_id:$("#contest_id").val(), query:encodeURIComponent($("#query").val())}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function deleteQuery(q) {
+        $.ajax({
+                type: "POST",
+                url: "task_deletequery.php",
+                data: ({query_id:q}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#queryNotification").removeClass().addClass(msg[0]);
+                        $("#queryNotification").html(msg[1]);
+                        
+                        getQueries();
+                }
+        });
+}
+
+function addTag() {
+        $.ajax({
+                type: "POST",
+                url: "tag_add.php",
+                data: ({tid:$("#tid").val(), tags:$("#tagwords").val()}),
+                success: function(html) {
+                        var msg = html.split(";");
+                        $("#tagNotification").removeClass().addClass(msg[0]);
+                        $("#tagNotification").html(msg[1]);
+                        
+                        getClassify();
+                }
+        });
+}
+
+
+$(document).ready(function() {
+        getComments();
+        getQueries();
+        getClassify();
+        getTutorial();
+        //getCloud();
+});
+
+$(document).everyTime(60000, function(i) {
+        if ($("#tid").val() != "" && $("#tid").val() != null) {
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcontest.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#contest_submit").html("");
+                                }
+                        }
+                });
+                $.ajax({
+                        type: "POST",
+                        url: "task_checkcourse.php",
+                        data: ({tid:$("#tid").val()}),
+                        success: function(html) {
+                                if (html == "0") {
+                                        $("#course_submit").html("");
+                                }
+                        }
+                });
+        }
+}, 0);
+
+$('#loading_mask_loader')
+        .hide()  // hide it initially
+        .ajaxStart(function() {
+                $(this).show();
+        })
+        .ajaxStop(function() {
+                $(this).hide();
+        });
+        
+</script>
+
+
+</div> <!-- end outer -->
+
+</div> <!-- end container -->
+
+<!-- START NUS-Footer --> 
+<div id="nusfooter" class="nusbody">
+<div id="nusfooter_ml"><div id="nusfooter_mr">
+<div id="nusfooter_tc"><div id="nusfooter_tl"><div id="nusfooter_tr">
+<div id="nusfooter_bc"><div id="nusfooter_bl"><div id="nusfooter_br">
+<div class="inner"><div class="left"><p>© Copyright 2009-2019 National University of Singapore. All Rights Reserved.</p>  
+<p class="nusfooterlinks">
+<a href="http://www.nus.edu.sg/terms.php">Terms of Use</a> |
+<a href="http://www.nus.edu.sg/policy.php">Privacy</a> |
+<a href="http://www.nus.edu.sg/nondiscrim.php">Non-discrimination</a></p> 
+</div>    
+<div class="right">
+<a href="https://mysoc.nus.edu.sg/">MySoC</a> |
+<a href="https://docs.comp.nus.edu.sg/cf/">Computing Facilities</a> |
+<a href="http://www.nus.edu.sg/search/">Search</a> |
+<a href="http://www.nus.edu.sg/campusmap/">Campus Map</a>
+<p>School of Computing, National University of Singapore</p>
+</div>    
+<div style="clear: both;"> </div>
+</div>
+</div></div></div>
+</div></div></div>
+</div></div>
+</div>
+<!-- END NUS-Footer -->
+
+<div id="hc_extension_bkgnd" style="position: fixed; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: -1999999999; display: block; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"></div><span id="hc_extension_svg_filters" hidden=""><svg xmlns="http://www.w3.org/2000/svg" version="1.1"><defs><filter x="0" y="0" width="99999" height="99999" id="hc_extension_off"><fecomponenttransfer><fefuncr type="table" tableValues="0 1"></fefuncr><fefuncg type="table" tableValues="0 1"></fefuncg><fefuncb type="table" tableValues="0 1"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_highcontrast"><fecomponenttransfer><fefuncr type="gamma" exponent="3.0"></fefuncr><fefuncg type="gamma" exponent="3.0"></fefuncg><fefuncb type="gamma" exponent="3.0"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_highcontrast_back"><fecomponenttransfer><fefuncr type="gamma" exponent="0.33"></fefuncr><fefuncg type="gamma" exponent="0.33"></fefuncg><fefuncb type="gamma" exponent="0.33"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_grayscale"><fecolormatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0"></fecolormatrix><fecomponenttransfer><fefuncr type="gamma" exponent="3"></fefuncr><fefuncg type="gamma" exponent="3"></fefuncg><fefuncb type="gamma" exponent="3"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_grayscale_back"><fecomponenttransfer><fefuncr type="gamma" exponent="0.33"></fefuncr><fefuncg type="gamma" exponent="0.33"></fefuncg><fefuncb type="gamma" exponent="0.33"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_invert"><fecomponenttransfer><fefuncr type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncr><fefuncg type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncg><fefuncb type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_invert_back"><fecomponenttransfer><fefuncr type="table" tableValues="1 0"></fefuncr><fefuncg type="table" tableValues="1 0"></fefuncg><fefuncb type="table" tableValues="1 0"></fefuncb></fecomponenttransfer><fecomponenttransfer><fefuncr type="gamma" exponent="1.7"></fefuncr><fefuncg type="gamma" exponent="1.7"></fefuncg><fefuncb type="gamma" exponent="1.7"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_invert_grayscale"><fecolormatrix type="matrix" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0"></fecolormatrix><fecomponenttransfer><fefuncr type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncr><fefuncg type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncg><fefuncb type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncb></fecomponenttransfer></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_yellow_on_black"><fecomponenttransfer><fefuncr type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncr><fefuncg type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncg><fefuncb type="gamma" amplitude="-1" exponent="3" offset="1"></fefuncb></fecomponenttransfer><fecolormatrix type="matrix" values="0.3 0.5 0.2 0 0 0.3 0.5 0.2 0 0 0 0 0 0 0 0 0 0 1 0"></fecolormatrix></filter><filter x="0" y="0" width="99999" height="99999" id="hc_extension_yellow_on_black_back"><fecomponenttransfer><fefuncr type="table" tableValues="1 0"></fefuncr><fefuncg type="table" tableValues="1 0"></fefuncg><fefuncb type="table" tableValues="1 0"></fefuncb></fecomponenttransfer><fecomponenttransfer><fefuncr type="gamma" exponent="0.33"></fefuncr><fefuncg type="gamma" exponent="0.33"></fefuncg><fefuncb type="gamma" exponent="0.33"></fefuncb></fecomponenttransfer></filter></defs></svg></span></body></html>
